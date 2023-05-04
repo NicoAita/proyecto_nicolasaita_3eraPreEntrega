@@ -42,16 +42,14 @@
 
 }
 
+ /*MIXIN*/
 .contenedorTextoMuyBerreta {
-    height: auto;
-    width: 95%;
-    margin-left: 30px;
-    margin-right: 30px;
-    padding: 3%;
-    background-color: $color-cuadrosMuyBerreta;
-
+    
+    @include contenedorTexto (center, 3%, $color-cuadrosMuyBerreta);
+  
 }
 
+ 
 /*BORRAR ESTA CLASE*/
 .tipografia {
     font-family: $fuente-principal;

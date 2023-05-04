@@ -1,0 +1,10 @@
+
+
+
+
+@mixin contenedorTexto ($alineacion, $padding, $color){
+
+    text-align: $alineacion;
+    padding: $padding;
+    background-color: $color;
+}

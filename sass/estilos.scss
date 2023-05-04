@@ -1,6 +1,7 @@
 
 @import "variables.scss";
 @import "reset.scss";
+@import "mixins.scss";
 @import "utilidades.scss";
 @import "header.scss";
 @import "mainIndex.scss"; 
@@ -9,6 +10,8 @@
 @import "mainHaciendores.scss";
 @import "mainBoludecesPagas.scss";
 @import "footer.scss";
+
+
  
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;600;700&display=swap');

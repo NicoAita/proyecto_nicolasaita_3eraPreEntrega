@@ -6,13 +6,12 @@
 
   }
 
-  /*FIN EXTEND*/
 
 
+  /*MIXIN*/
   .contenedorBoludeces {
 
-      padding: 3%;
-      background-color: $color-cuadrosBoludeces;
+    @include contenedorTexto (center, 3%, $color-cuadrosBoludeces);
 
   }
 

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*Maps*/
+/*MAPA*/
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;600;700&display=swap");
 * {
   margin: 0;
@@ -167,11 +167,9 @@
   object-fit: cover;
 }
 
+/*MIXIN*/
 .contenedorTextoMuyBerreta {
-  height: auto;
-  width: 95%;
-  margin-left: 30px;
-  margin-right: 30px;
+  text-align: center;
   padding: 3%;
   background-color: rgb(134, 216, 248);
 }
@@ -211,7 +209,6 @@
   background-image: url("../assets/img/Fondo Fucsia.jpg");
 }
 
-/*FIN EXTEND*/
 .izquierdaTextoLírico, .derechaTextoLírico {
   /*height: 50vh; SACAR SI SE SOBREPASA EL TEXTO*/
   display: flex;
@@ -220,6 +217,7 @@
   background-color: rgb(252, 172, 245);
 }
 
+/*EXTEND*/
 .derechaFotoBondi {
   background-image: url(../assets/img/Cuentos\ de\ Bondi.jpg);
   height: 90vh;
@@ -312,8 +310,9 @@
   background-image: url("../assets/img/Fondo Rojo.jpg");
 }
 
-/*FIN EXTEND*/
+/*MIXIN*/
 .contenedorBoludeces {
+  text-align: center;
   padding: 3%;
   background-color: rgb(245, 139, 125);
 }
