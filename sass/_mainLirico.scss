@@ -1,0 +1,73 @@
+/*EXTEND*/
+
+.bodyFondo--lírico {
+    @extend .bodyFondo;
+    background-image: url("../assets/img/Fondo\ Fucsia.jpg");
+
+}
+
+/*FIN EXTEND*/
+
+
+.izquierdaTextoLírico {
+    /*height: 50vh; SACAR SI SE SOBREPASA EL TEXTO*/
+    display: flex;
+    align-items: center;
+    padding: 4%;
+
+    background-color: $color-cuadrosLirico;
+}
+
+.derechaTextoLírico {
+    @extend .izquierdaTextoLírico; 
+}
+
+.derechaFotoBondi {
+    background-image: url(../assets/img/Cuentos\ de\ Bondi.jpg);
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    /* background-color: aqua; */
+
+}
+
+.izquierdaFotoEspejo {
+    background-image: url(../assets/img/Pedacitos.jpg);
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+    /* background-color: aqua; */
+
+}
+
+
+
+/*MEDIA QUERIES*/
+
+@media screen and (min-width: 0px) and (max-width:768px) {
+
+    .bodyFondo--lírico {
+        background-image: url("../assets/img/Fondo\ para\ web\ hxh\ Mobile-02\ Fucsia.svg");
+
+
+    }
+
+
+    .izquierdaTextoLírico {
+
+        margin-top: 10px;
+        margin-bottom: 30px;
+    
+    }
+
+    .derechaTextoLírico {
+
+        margin-top: 30px;
+        margin-bottom: 10px;
+
+    }
+
+     
+}

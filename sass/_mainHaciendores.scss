@@ -1,0 +1,79 @@
+ /*EXTEND con Body*/
+
+ .bodyFondo--haciendores {
+    @extend .bodyFondo;
+    background-image: url("../assets/img/Fondo\ Verde.jpg");
+
+}
+
+/*FIN EXTEND con Body*/
+
+
+.izquierdaPelisRewind {
+    background-image: url(../assets/img/Tincho\ Tenaglia.png);
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    /* background-color: aqua; */
+
+}
+
+.izquierdaFlavor {
+    @extend .izquierdaPelisRewind;
+    background-image: url(../assets/img/Flavio\ Herrera.png);
+    
+}
+
+.derechaComicFlavor {
+    @extend .izquierdaPelisRewind;
+    background-image: url(../assets/img/Flavor-Comic.png);
+    
+}
+
+
+
+.derechaTextoHaciendores {
+   
+    display: flex;
+    align-items: center;
+    padding: 4%;
+    background-color: $color-cuadrosHaciendores;
+}
+
+
+
+.izquierdaTextoHaciendores {
+    @extend .derechaTextoHaciendores;
+height: 350px;
+}
+
+.derechaPelisRewind {
+
+    height: 50vh;
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: -3%;
+    
+
+    iframe {
+        display: flex;
+        width: 210px;
+        height: 100%;
+       
+
+    }
+
+}
+
+.formularioBloque {
+
+    width: 15%;
+    margin: auto;
+    margin-bottom: 2%;
+    justify-content: center;
+    
+ 
+}

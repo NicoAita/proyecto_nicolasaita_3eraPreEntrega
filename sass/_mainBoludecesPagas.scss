@@ -1,0 +1,45 @@
+  /*EXTEND*/
+
+  .bodyFondo--boludecesPagas {
+      @extend .bodyFondo;
+      background-image: url("../assets/img/Fondo\ Rojo.jpg");
+
+  }
+
+  /*FIN EXTEND*/
+
+
+  .contenedorBoludeces {
+
+      padding: 3%;
+      background-color: $color-cuadrosBoludeces;
+
+  }
+
+  .tamañoVideo {
+      iframe {
+          height: 60vh;
+          width: 100vh;
+      }
+  }
+
+
+
+  /*MEDIA QUERIES*/
+
+  @media screen and (min-width: 0px) and (max-width:768px) {
+
+      .bodyFondo--boludecesPagas {
+          background-image: url("../assets/img/Fondo\ para\ web\ hxh\ Mobile-05\ Rojo.svg");
+
+      }
+
+      .tamañoVideo {
+          iframe {
+              height: 40vh;
+              width: 60vh;
+          }
+      }
+
+
+  }

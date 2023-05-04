@@ -1,0 +1,354 @@
+@charset "UTF-8";
+/*Maps*/
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+.section__contenedor__head {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.section__contenedor__head2 {
+  margin-top: 3%;
+  margin-bottom: 1%;
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-align: center;
+  /* background-color: blue; */
+}
+
+.espacioEnPantalla {
+  padding: 5%;
+  /*background-color: blueviolet*/
+}
+
+.alinear {
+  align-items: center;
+}
+
+.header__contenedor__logo {
+  width: 50%;
+  margin-left: 30px;
+}
+
+.header__contenedor__slogan img {
+  margin-top: 2%;
+}
+
+.header__contenedor__iconos {
+  font-size: 30px;
+  color: black;
+  margin-right: 10px;
+}
+
+/*MENÚ NavBar linkColor usando Maps*/
+.navbar-light .navbar-nav .linkColorIndex {
+  color: rgb(199, 199, 47) !important;
+  font-weight: bold;
+}
+
+.navbar-light .navbar-nav .linkColorBoludeces {
+  color: rgb(211, 38, 8) !important;
+  font-weight: bold;
+}
+
+.navbar-light .navbar-nav .linkColorMuyBerreta {
+  color: rgb(5, 146, 151) !important;
+  font-weight: bold;
+}
+
+.navbar-light .navbar-nav .linkColorLirico {
+  color: rgb(214, 58, 214) !important;
+  font-weight: bold;
+}
+
+.navbar-light .navbar-nav .linkColorHaciendores {
+  color: rgb(85, 177, 48) !important;
+  font-weight: bold;
+}
+
+/*FIN MENÚ NavBar Color usando Maps*/
+.section__contenedor__head {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  font-size: 2rem;
+  text-align: center;
+  /*background-color: blue;*/
+}
+
+.section__contenedor__parrafo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 3%;
+  text-align: center;
+}
+.section__contenedor__parrafo__span {
+  font-weight: bold;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .header__contenedor__logo {
+    width: 60%;
+  }
+  .header__contenedor__slogan img {
+    width: 460px;
+  }
+}
+.bodyFondo, .bodyFondo--boludecesPagas, .bodyFondo--haciendores, .bodyFondo--lírico, .bodyFondo--muyBerreta {
+  background-image: url("../assets/img/Fondo Amarillo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/*Animación y Transición*/
+.cardAnimada {
+  transition: width 1s, height 1s;
+}
+.cardAnimada:hover {
+  width: 300px;
+  height: 300px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .cardAnimada {
+    transition: none;
+  }
+  .cardAnimada:hover {
+    width: auto;
+    height: auto;
+  }
+}
+/*EXTEND*/
+.bodyFondo--muyBerreta {
+  background-image: url("../assets/img/Fondo Celeste.jpg");
+}
+
+/*FIN EXTEND*/
+.izquierdaTextoViejoDeM {
+  /*height: 50vh; SACAR SI SE SOBREPASA EL TEXTO*/
+  display: flex;
+  align-items: center;
+  height: 50%;
+  padding: 4%;
+  background-color: rgb(134, 216, 248);
+}
+
+.derechaVideoViejoDeM {
+  display: flex;
+  flex-direction: column;
+  align-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  overflow: hidden;
+  height: 60vh;
+  width: auto;
+}
+.derechaVideoViejoDeM iframe {
+  display: flex;
+  width: 250px;
+  height: 300%;
+  object-fit: cover;
+}
+
+.contenedorTextoMuyBerreta {
+  height: auto;
+  width: 95%;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 3%;
+  background-color: rgb(134, 216, 248);
+}
+
+/*BORRAR ESTA CLASE*/
+.tipografia {
+  font-family: "Quicksand", sans-serif;
+  /*font-weight: bold;*/
+}
+
+/*BORRAR ESTA CLASE*/
+.card-header {
+  font-size: 1.2rem;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .bodyFondo--muyBerreta {
+    background-image: url("../assets/img/Fondo para web hxh Mobile-04 Celeste.svg");
+  }
+  .derechaVideoViejoDeM {
+    height: 70vh;
+  }
+  .izquierdaTextoViejoDeM {
+    height: auto;
+    width: 95%;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .contenedorTextoMuyBerreta {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+/*EXTEND*/
+.bodyFondo--lírico {
+  background-image: url("../assets/img/Fondo Fucsia.jpg");
+}
+
+/*FIN EXTEND*/
+.izquierdaTextoLírico, .derechaTextoLírico {
+  /*height: 50vh; SACAR SI SE SOBREPASA EL TEXTO*/
+  display: flex;
+  align-items: center;
+  padding: 4%;
+  background-color: rgb(252, 172, 245);
+}
+
+.derechaFotoBondi {
+  background-image: url(../assets/img/Cuentos\ de\ Bondi.jpg);
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  /* background-color: aqua; */
+}
+
+.izquierdaFotoEspejo {
+  background-image: url(../assets/img/Pedacitos.jpg);
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+  /* background-color: aqua; */
+}
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .bodyFondo--lírico {
+    background-image: url("../assets/img/Fondo para web hxh Mobile-02 Fucsia.svg");
+  }
+  .izquierdaTextoLírico, .derechaTextoLírico {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .derechaTextoLírico {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+}
+/*EXTEND con Body*/
+.bodyFondo--haciendores {
+  background-image: url("../assets/img/Fondo Verde.jpg");
+}
+
+/*FIN EXTEND con Body*/
+.izquierdaPelisRewind, .derechaComicFlavor, .izquierdaFlavor {
+  background-image: url(../assets/img/Tincho\ Tenaglia.png);
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  /* background-color: aqua; */
+}
+
+.izquierdaFlavor {
+  background-image: url(../assets/img/Flavio\ Herrera.png);
+}
+
+.derechaComicFlavor {
+  background-image: url(../assets/img/Flavor-Comic.png);
+}
+
+.derechaTextoHaciendores, .izquierdaTextoHaciendores {
+  display: flex;
+  align-items: center;
+  padding: 4%;
+  background-color: rgb(172, 252, 179);
+}
+
+.izquierdaTextoHaciendores {
+  height: 350px;
+}
+
+.derechaPelisRewind {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: -3%;
+}
+.derechaPelisRewind iframe {
+  display: flex;
+  width: 210px;
+  height: 100%;
+}
+
+.formularioBloque {
+  width: 15%;
+  margin: auto;
+  margin-bottom: 2%;
+  justify-content: center;
+}
+
+/*EXTEND*/
+.bodyFondo--boludecesPagas {
+  background-image: url("../assets/img/Fondo Rojo.jpg");
+}
+
+/*FIN EXTEND*/
+.contenedorBoludeces {
+  padding: 3%;
+  background-color: rgb(245, 139, 125);
+}
+
+.tamañoVideo iframe {
+  height: 60vh;
+  width: 100vh;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .bodyFondo--boludecesPagas {
+    background-image: url("../assets/img/Fondo para web hxh Mobile-05 Rojo.svg");
+  }
+  .tamañoVideo iframe {
+    height: 40vh;
+    width: 60vh;
+  }
+}
+.footer {
+  text-align: center;
+  background-color: black;
+  height: auto;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  /*background-color:rgb(0, 0, 0)*/
+}
+
+.footer__contenedor__texto {
+  color: white;
+  margin-bottom: 2%;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,33 @@
+.bodyFondo {
+    background-image: url("../assets/img/Fondo\ Amarillo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*Animación y Transición*/
+.cardAnimada {
+    transition: width 1s, height 1s;
+
+    &:hover {
+        width: 300px;
+        height: 300px;
+    }
+
+}
+
+
+
+
+@media screen and (min-width: 0px) and (max-width:768px) {
+
+    .cardAnimada {
+        transition: none;
+
+        &:hover {
+            width: auto;
+            height: auto;
+        }
+    }
+}

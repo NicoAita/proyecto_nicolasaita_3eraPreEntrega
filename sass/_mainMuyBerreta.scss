@@ -1,0 +1,97 @@
+ /*EXTEND*/
+
+.bodyFondo--muyBerreta {
+    @extend .bodyFondo;
+    background-image: url("../assets/img/Fondo\ Celeste.jpg");
+
+}
+
+/*FIN EXTEND*/
+
+.izquierdaTextoViejoDeM {
+    /*height: 50vh; SACAR SI SE SOBREPASA EL TEXTO*/
+    display: flex;
+    align-items: center;
+    height: 50%;
+    padding: 4%;
+    background-color: $color-cuadrosMuyBerreta;
+}
+
+
+
+.derechaVideoViejoDeM {
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    overflow: hidden;
+    height: 60vh;
+    width: auto;
+
+    iframe {
+
+        display: flex;
+        width: 250px;
+        height: 300%;
+        object-fit: cover;
+    }
+
+
+}
+
+.contenedorTextoMuyBerreta {
+    height: auto;
+    width: 95%;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 3%;
+    background-color: $color-cuadrosMuyBerreta;
+
+}
+
+/*BORRAR ESTA CLASE*/
+.tipografia {
+    font-family: $fuente-principal;
+    /*font-weight: bold;*/
+ 
+  }
+  /*BORRAR ESTA CLASE*/
+  
+  .card-header {
+    font-size: 1.2rem;
+  }
+
+/*MEDIA QUERIES*/
+
+@media screen and (min-width: 0px) and (max-width:768px) {
+
+    .bodyFondo--muyBerreta {
+        background-image: url("../assets/img/Fondo\ para\ web\ hxh\ Mobile-04\ Celeste.svg");
+       
+    }
+    
+    .derechaVideoViejoDeM {
+        height: 70vh;
+
+    }
+
+
+    .izquierdaTextoViejoDeM {
+        height: auto;
+        width: 95%;
+        margin-left: 50px;
+        margin-right: 50px;
+
+    }
+
+    .contenedorTextoMuyBerreta {
+
+        margin-left: 5px;
+        margin-right: 5px;
+
+    }
+
+}
