@@ -104,7 +104,8 @@
     width: 60%;
   }
   .header__contenedor__slogan img {
-    width: 300px;
+    width: 460px;
+    /*width: 300px me quedeba mejor que con 460px en mi celular, pero si pruebo en isnpeccionar en google queda mejor con 460*/
   }
 }
 .bodyFondo, .bodyFondo--boludecesPagas, .bodyFondo--haciendores, .bodyFondo--lírico, .bodyFondo--muyBerreta {
