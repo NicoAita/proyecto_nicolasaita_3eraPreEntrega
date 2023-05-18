@@ -1,11 +1,11 @@
 .header__contenedor__logo {
-  width: 50%;
+  width: 220px;
   margin-left: 30px;
 }
 
 .header__contenedor__slogan {
   img {
-  margin-top: 2%;
+  margin-top: 5%;
 } 
 }
 
@@ -116,19 +116,20 @@
 
 
 /*MEDIA QUERIES*/
-
-@media screen and (min-width: 0px) and (max-width:768px) {
+@media screen and (max-width: 768px) {
 
 
   .header__contenedor__logo {
 
-    width: 60%;
+    width: 300px;
+    /*width: 60%;*/
 
   }
 
   .header__contenedor__slogan {
     img {
-      width: 460px;
+      width: 350px;
+      margin-top: 1%;
       /*width: 300px me quedeba mejor que con 460px en mi celular, pero si pruebo en isnpeccionar en google queda mejor con 460*/
 
     }
