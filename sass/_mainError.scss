@@ -1,0 +1,7 @@
+  /*EXTEND*/
+
+  .bodyFondo--error404 {
+    @extend .bodyFondo;
+    background-image: url("../assets/img/Fondo\ Gris.png");
+
+}

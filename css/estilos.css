@@ -75,6 +75,11 @@
   font-weight: bold;
 }
 
+.navbar-light .navbar-nav .linkColorError404 {
+  color: rgb(133, 133, 133) !important;
+  font-weight: bold;
+}
+
 /*FIN MENÚ NavBar Color usando Maps*/
 .section__contenedor__head {
   margin-top: 3%;
@@ -108,7 +113,7 @@
     /*width: 300px me quedeba mejor que con 460px en mi celular, pero si pruebo en isnpeccionar en google queda mejor con 460*/
   }
 }
-.bodyFondo, .bodyFondo--boludecesPagas, .bodyFondo--haciendores, .bodyFondo--lírico, .bodyFondo--muyBerreta {
+.bodyFondo, .bodyFondo--error404, .bodyFondo--boludecesPagas, .bodyFondo--haciendores, .bodyFondo--lírico, .bodyFondo--muyBerreta {
   background-image: url("../assets/img/Fondo Amarillo.jpg");
   background-size: cover;
   background-position: center;
@@ -333,6 +338,11 @@
     width: 60vh;
   }
 }
+/*EXTEND*/
+.bodyFondo--error404 {
+  background-image: url("../assets/img/Fondo Gris.png");
+}
+
 .footer {
   text-align: center;
   background-color: black;
